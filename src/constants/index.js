@@ -38,27 +38,27 @@ export const imageGridData = [
 ];
 export const footerLinks = [
   {
-    image: "../src/assets/fb.png",
     link: "",
+    image: "/images/fb.png",
     alt: "",
   },
   {
-    image: "../src/assets/insta.png",
     link: "",
+    image: "/images/insta.png",
     alt: "",
   },
   {
-    image: "../src/assets/twitter.png",
     link: "",
+    image: "/images/twitter.png",
     alt: "",
   },
   {
-    image: "../src/assets/yb.png",
     link: "",
+    image: "/images/yb.png",
     alt: "",
   },
   {
-    image: "../src/assets/linkedin.png",
+    image: "/images/linkedin.png",
     link: "",
     alt: "",
   },
