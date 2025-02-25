@@ -23,14 +23,3 @@ body {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
-.blackdrop::after {
-  content: "";
-  z-index: 1000;
-  position: absolute;
-  display: block;
-  width: 370px;
-  height: 228px;
-  border-radius: 39px;
-  backdrop-filter: blur(50px) !important;
-  /* background: rgba(255, 255, 255, 0.2); Semi-transparent */
-}
