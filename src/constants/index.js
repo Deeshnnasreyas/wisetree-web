@@ -2,36 +2,36 @@ export const imageGridData = [
   {
     heading: "enhanced Brand Visibility in Competitive",
     subheading: " Markets",
-    bg: "../src/assets/enhancedbg.png",
-    icon: "../src/assets/enhanced.png",
-    ellipse: "../src/assets/ellipse1.png",
+    bg: "/images/enhancedbg.png",
+    icon: "/images/enhanced.png",
+    ellipse: "/images/ellipse1.png",
     alt: "image",
     step: "01",
   },
   {
     heading: "Balance CAC with ROI ",
     subheading: "Digital Era",
-    bg: "../src/assets/digitalbg.png",
-    icon: "../src/assets/digitalIcon.png",
-    ellipse: "../src/assets/Ellipse2.png",
+    bg: "/images/digitalbg.png",
+    icon: "/images/digitalIcon.png",
+    ellipse: "/images/Ellipse2.png",
     alt: "image",
     step: "02",
   },
   {
     heading: "Complex product & service ",
     subheading: "launches",
-    bg: "../src/assets/laungebg.png",
-    icon: "../src/assets/laungeIcon.png",
-    ellipse: "../src/assets/ellipse3.png",
+    bg: "/images/laungebg.png",
+    icon: "/images/laungeIcon.png",
+    ellipse: "/images/ellipse3.png",
     alt: "image",
     step: "03",
   },
   {
     heading: "Scale Marketing Operations for ",
     subheading: "Growth",
-    bg: "../src/assets/growthbg.png",
-    icon: "../src/assets/growthicon.png",
-    ellipse: "../src/assets/elipse4.png",
+    bg: "/images/growthbg.png",
+    icon: "/images/growthicon.png",
+    ellipse: "/images/elipse4.png",
     alt: "image",
     step: "04",
   },
@@ -115,5 +115,3 @@ export const Brandtexts = ` Our strategies are designed to be an efficient inves
               using our unique, proprietary 5D framework, we create long-term
               value that significantly reduces marketing costs. Learn how we
               apply this framework to guide businesses to success.`;
-
-                            
