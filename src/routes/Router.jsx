@@ -3,7 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import Home from "../pages/homePage/Home";
 
-const router = createBrowserRouter([
+const Router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
@@ -16,4 +16,4 @@ const router = createBrowserRouter([
   },
 ]);
 
-export default router;
+export default Router;
