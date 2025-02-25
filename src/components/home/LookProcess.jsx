@@ -1,7 +1,10 @@
 import React from "react";
-const LookProcess = () => {
+import PropTypes from "prop-types";
+const LookProcess = ({ className }) => {
   return (
-    <div className="bg-[#FCFFF9] p-[30px] rounded-b-[80px] relative">
+    <div
+      className={`bg-[#FCFFF9] p-[30px] rounded-b-[80px] relative ${className}`}
+    >
       <div className="process-section w-full h-full lg:h-[838px] flex flex-col">
         <div className="flex justify-center mt-[142px]">
           <h1 className=" max-w-[370px] lg:max-w-[870px] text-center font-poppins font-normal text-[45px] xl:text-[80px] leading-[55px] xl:leading-[95px] tracking-[-1%] text-[#104386] bg-gradient-to-r from-[#104386] to-[#93bbef] bg-clip-text text-transparent">
@@ -105,5 +108,7 @@ const LookProcess = () => {
     </div>
   );
 };
-
+LookProcess.propTypes = {
+  className: PropTypes.string.isRequired, // Ensuring className is always passed and is a string
+};
 export default LookProcess;

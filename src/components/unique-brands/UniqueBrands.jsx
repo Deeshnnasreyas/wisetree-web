@@ -5,10 +5,12 @@ import BrandContent from "./BrandContent";
 import brandImgleft from "../../assets/brandImgleft.png";
 import brandImgright from "../../assets/brandImgright.png";
 import brandImgleftMob from "../../assets/brandImgleftMob.png";
-
-const UniqueBrands = () => {
+import PropTypes from "prop-types";
+const UniqueBrands = ({ className }) => {
   return (
-    <div className="bg-[#FCFFF9] mt-[130px] rounded-b-[80px] relative z-50">
+    <div
+      className={`bg-[#FCFFF9] mt-[130px] rounded-b-[80px] relative z-50 ${className}`}
+    >
       <div className="brand-section bg-[#FCFFF9] rounded-b-[80px] w-full h-[903px]">
         <div className="p-[30px]">
           <h4 className="font-libreFranklin text-[18px] leading-[24px] tracking-normal font-normal text-[#2B2A29] uppercase">
@@ -45,5 +47,7 @@ const UniqueBrands = () => {
     </div>
   );
 };
-
+UniqueBrands.propTypes = {
+  className: PropTypes.string.isRequired, // Ensuring className is always passed and is a string
+};
 export default UniqueBrands;

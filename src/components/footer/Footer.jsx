@@ -6,12 +6,12 @@ import FooterMenu from "./FooterMenu";
 import FooterLogo from "./FooterLogo";
 import FooterSocialLinks from "./FooterSocialLinks";
 import FooterCopyright from "./FooterCopyright";
-
-const Footer = () => {
+import PropTypes from "prop-types";
+const Footer = ({ className }) => {
   return (
     <div
-      className="bg-cover bg-[url('/whobg.png')] w-full min-h-screen overflow-hidden relative
-    flex flex-col mt-[-80px] pt-[150px] p-[20px] sm:items-center"
+      className={`bg-cover bg-[url('/whobg.png')] w-full min-h-screen overflow-hidden relative
+    flex flex-col mt-[-80px] pt-[150px] p-[20px] sm:items-center ${className}`}
     >
       <div
         className="w-full bg-cover bg-left-top flex flex-col md:flex-row items-center
@@ -60,5 +60,7 @@ const Footer = () => {
     </div>
   );
 };
-
+Footer.propTypes = {
+  className: PropTypes.string.isRequired, // Ensuring className is always passed and is a string
+};
 export default Footer;

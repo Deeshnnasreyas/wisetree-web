@@ -2,9 +2,11 @@ import React from "react";
 import Title from "./Title";
 import BrandInfo, { BrandTextAlt } from "./BrandInfo";
 import LearnMoreButton from "./LearnMoreButton";
-
-const BrandSection = () => (
-  <div className="bg-[#FCFFF9] mt-[130px] p-[30px] rounded-b-[80px] relative z-50 w-full">
+import PropTypes from "prop-types";
+const BrandSection = ({ className }) => (
+  <div
+    className={`bg-[#FCFFF9] mt-[130px] p-[30px] rounded-b-[80px] relative z-50 w-full ${className}`}
+  >
     <div className="brand-section bg-[#FCFFF9] rounded-b-[80px] w-full h-[1078px] xl:h-[767px]">
       <Title />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[20px]">
@@ -20,5 +22,7 @@ const BrandSection = () => (
     </div>
   </div>
 );
-
+BrandSection.propTypes = {
+  className: PropTypes.string.isRequired, // Ensuring className is always passed and is a string
+};
 export default BrandSection;

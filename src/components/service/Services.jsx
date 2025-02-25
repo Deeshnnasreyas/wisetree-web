@@ -1,9 +1,11 @@
 import React from "react";
 import { imageGridData } from "../../constants/index";
 import ServiceItem from "./ServiceItem";
-
-const Services = () => (
-  <div className="bg-[#FCFFF9] mt-[80px] lg:mt-[130px] px-[21px]">
+import PropTypes from "prop-types";
+const Services = ({ className }) => (
+  <div
+    className={`bg-[#FCFFF9] mt-[80px] lg:mt-[130px] px-[21px] ${className}`}
+  >
     <div className="service-section relative w-full">
       <div
         className="w-full h-[209px] pl-[21px] bg-cover bg-left-top flex items-center justify-left
@@ -37,5 +39,7 @@ const Services = () => (
     </div>
   </div>
 );
-
+Services.propTypes = {
+  className: PropTypes.string.isRequired, // Ensuring className is always passed and is a string
+};
 export default Services;

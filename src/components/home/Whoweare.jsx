@@ -5,9 +5,10 @@ import whoweareimg2 from "../../assets/whoweareimg2.png";
 import whoweareimg3 from "../../assets/whoweareimg3.png";
 import arrows from "../../assets/arrows.png";
 import { whowearetext } from "../../constants";
-const Whoweare = () => {
+import PropTypes from "prop-types";
+const Whoweare = ({ className }) => {
   return (
-    <div className="">
+    <div className={className}>
       <div
         className="who-section bg-cover flex bg-[url('/whobg.png')] w-full h-[1291px] xl:h-[1107px] rounded-b-[80px]
        overflow-hidden relative  mt-[-80px] pt-[210px] p-[30px]"
@@ -70,5 +71,7 @@ const Whoweare = () => {
     </div>
   );
 };
-
+Whoweare.propTypes = {
+  className: PropTypes.string.isRequired, // Ensuring className is always passed and is a string
+};
 export default Whoweare;
